@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject attractedToBlue;
+    public float strengthOfAttraction;
+    // Use this for initialization
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void OnTriggerEnter(Collider other)
+    {
+        Transform pos =  other.GetComponent<Transform>();
+        pos.setPo
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
